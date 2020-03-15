@@ -23,18 +23,27 @@ class _TestDrawerState extends State<TestDrawer> {
               child: ListView(
                 children: <Widget>[
                   DrawerComponent(
-                    name: "hello",
+                    name: "call",
                     textOverflow: TextOverflow.ellipsis,
                     child: TestWidget(),
-                    leading: Icon(Icons.account_box),
-                    trailing: Icon(Icons.adb),
+                    leading: Icon(Icons.call),
                     tileSize: 10,
-                    checkBoxValue: checkbox,
-                    tralingSelection: "check",
                     dividerheight: 5,
                     dividerThickness: 1,
                     dividercolor: Colors.black,
-                  )
+                  ),
+                  DrawerComponent(
+                    name: "contect",
+                    textOverflow: TextOverflow.ellipsis,
+                    child: TestWidget(),
+                    leading: Icon(Icons.contacts),
+                    trailing: Icon(Icons.content_copy),
+                    tileSize: 10,
+                    tralingSelection: "Icon",
+                    dividerheight: 5,
+                    dividerThickness: 1,
+                    dividercolor: Colors.black,
+                  ),
                 ],
               ),
             )));

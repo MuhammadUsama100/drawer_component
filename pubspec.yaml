@@ -1,8 +1,8 @@
 name: drawer_component
 description: A new Flutter package project.
 version: 0.0.1
-author: Muhammad Usama <https://github.com/MuhammadUsama100>
-homepage: https://github.com/MuhammadUsama100
+
+homepage: https://github.com/MuhammadUsama100/drawer_component
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
