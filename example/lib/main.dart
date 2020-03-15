@@ -11,7 +11,7 @@ class TestDrawer extends StatefulWidget {
 }
 
 class _TestDrawerState extends State<TestDrawer> {
-  bool checkbox = true;
+  final bool checkbox = true;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

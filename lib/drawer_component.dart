@@ -5,24 +5,28 @@ import 'package:flutter/material.dart';
 class DrawerComponent extends StatefulWidget {
   String name;
   Widget child;
-  bool divideravailabilityCheck;
-  double dividerheight;
-  double dividerThickness;
-  Color dividercolor;
-  Key dividerkey;
-  Widget trailing;
-  double textSize;
-  FontStyle fontStyle;
-  String tralingSelection;
-  double tileSize;
-  Widget leading;
-  FontWeight fontWeight;
+  // divider attribute
+  final bool divideravailabilityCheck;
+  final double dividerheight;
+  final double dividerThickness;
+  final Color dividercolor;
+  final Key dividerkey;
+  // attribute for adding widgets
+  final Widget leading;
+  final Widget trailing;
+  // Text Styling
+  final double textSize;
+  final FontStyle fontStyle;
+  final String tralingSelection;
+  final double tileSize;
+  final TextOverflow textOverflow;
+  final FontWeight fontWeight;
+  final int maxline;
+  final Color textColor;
+  final String fontfamily;
+  // check box controller
   bool checkBoxValue;
-  Color textColor;
-  TextOverflow textOverflow;
-  int maxline;
-  Function onChangeFuncCheckbox;
-  String fontfamily;
+
   DrawerComponent(
       {@required this.name,
       @required this.child,
@@ -40,7 +44,6 @@ class DrawerComponent extends StatefulWidget {
       this.dividerThickness = 2,
       this.fontStyle = FontStyle.normal,
       this.dividerkey,
-      this.onChangeFuncCheckbox,
       this.fontWeight = FontWeight.normal,
       this.divideravailabilityCheck =
           true, //  If you required a divider set it True otherwise set it False
