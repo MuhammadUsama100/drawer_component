@@ -2,7 +2,7 @@
 
 A Flutter implementation of easy useable component used in drawer to design beautiful Applications.
 
-![Drawer Component](DisplayImage.jpg =24x30 )
+![Drawer Component](DisplayImage.jpg)
 
 ## Features
 
