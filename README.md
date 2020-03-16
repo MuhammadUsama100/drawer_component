@@ -2,30 +2,48 @@
 
 A Flutter implementation of easy useable component used in drawer to design beautiful Applications.
 
-![Drawer Component](DisplayImage.jpg)
+![Drawer Component](DisplayImageLogo.jpg)
 
 ## Features
 
-This library will allow you to design the drawer components without any additional hastle. The major type of componnets that could be designed include buttons, icons buttons, widgets, dividers and boolean check buttons. The basic idea is to use this libarary to reduce the coding effort while designing the drawer componnets of your android and IOS applications.
+This library will allow you to design the drawer components without any additional hastle. The major type of componnets that could be designed include buttons, icons buttons, widgets, dividers and boolean check buttons. The basic idea is to use this libarary to reduce the coding effort while designing the drawer componnets of your android and IOS applications. New version 0.2.0 include an beautiful logo for Drawer as will the newer version also had fixed issue in ComponentDrawer and updrated it to DrawerTile which is more flexible . Furthermore Logo contains many fetures that cout customize the drawer including the gradient and custom text designing making programmers job easier .
 
 ## How to use this Component
+
+### Drawer
+
+![Drawer Component](DisplayImage2.jpg)
+
+```
+ DrawerLogo(
+                    avatarBackgroundColor: Colors.white,
+                    circleAvatarImageurl:
+                        "https://i.ytimg.com/vi/sK-8k1Dq1xM/hqdefault.jpg",
+                    checkNetworkAssets: true,
+                    color: Colors.blue,
+                    text: "qwerty",
+                    avatarradius: 50,
+                  ),
+```
+
+### Drawer Tile
+
+![Drawer Component](DisplayImage.jpg)
 
 ```
 drawer: new Drawer(
     child: ListView(
     children: <Widget>[
-            DrawerComponent(
-            name: "hello",
-            textOverflow: TextOverflow.ellipsis,
-            child: TestWidget(),
-            leading: Icon(Icons.account_box),
-            trailing: Icon(Icons.adb),
-            tileSize: 10,
-            tralingSelection: "Icon",
-            dividerheight: 5,
-            dividerThickness: 1,
-            dividercolor: Colors.black,
-                  )
+            DrawerTile(
+                    name: "call",
+                    textOverflow: TextOverflow.ellipsis,
+                    child: TestWidget(),
+                    leading: Icon(Icons.call),
+                    tileSize: 10,
+                    dividerheight: 5,
+                    dividerThickness: 1,
+                    dividercolor: Colors.black,
+                  ),
                 ],
         ),
 );

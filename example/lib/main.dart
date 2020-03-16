@@ -1,4 +1,5 @@
 import 'package:drawer_component/drawer_component.dart';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(TestDrawer());
@@ -22,7 +23,20 @@ class _TestDrawerState extends State<TestDrawer> {
             drawer: new Drawer(
               child: ListView(
                 children: <Widget>[
-                  DrawerComponent(
+                  DrawerLogo(
+                    avatarBackgroundColor: Colors.white,
+                    circleAvatarImageurl:
+                        "https://i.ytimg.com/vi/sK-8k1Dq1xM/hqdefault.jpg",
+                    checkNetworkAssets: true,
+                    color: Colors.blue,
+                    text: "qwerty",
+                    gradientCheck: true,
+                    begin: Alignment.bottomRight,
+                    end: Alignment.topLeft,
+                    gradientColors: [Colors.red, Colors.blue],
+                    avatarradius: 50,
+                  ),
+                  DrawerTile(
                     name: "call",
                     textOverflow: TextOverflow.ellipsis,
                     child: TestWidget(),
@@ -32,7 +46,7 @@ class _TestDrawerState extends State<TestDrawer> {
                     dividerThickness: 1,
                     dividercolor: Colors.black,
                   ),
-                  DrawerComponent(
+                  DrawerTile(
                     name: "contect",
                     textOverflow: TextOverflow.ellipsis,
                     child: TestWidget(),
