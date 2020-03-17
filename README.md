@@ -82,5 +82,6 @@ Alternatively, your editor might support flutter pub get. Check the docs for you
    Now in your Dart code, you can use:
 
 ```
-import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:drawer_component/drawer_component.dart';
+
 ```
